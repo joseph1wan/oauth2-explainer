@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/joseph1wan/oauth2-explainer/static/css/main.ff0be918.css",
+    "main.js": "/joseph1wan/oauth2-explainer/static/js/main.5dbcea77.js",
+    "static/js/787.8d0851c0.chunk.js": "/joseph1wan/oauth2-explainer/static/js/787.8d0851c0.chunk.js",
+    "index.html": "/joseph1wan/oauth2-explainer/index.html",
+    "main.ff0be918.css.map": "/joseph1wan/oauth2-explainer/static/css/main.ff0be918.css.map",
+    "main.5dbcea77.js.map": "/joseph1wan/oauth2-explainer/static/js/main.5dbcea77.js.map",
+    "787.8d0851c0.chunk.js.map": "/joseph1wan/oauth2-explainer/static/js/787.8d0851c0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff0be918.css",
+    "static/js/main.5dbcea77.js"
+  ]
+}
