@@ -7,71 +7,81 @@ function App() {
   return (
     <div className="App">
       <div className="flex flex-col p-24">
-        <div className="container m-auto grid grid-cols-8 gap-4">
+        <div className="container m-auto grid grid-cols-8 grid-rows-10 gap-4">
           <HeaderBox name="USER" />
           <HeaderBox name="WEB APPLICATION" />
           <HeaderBox name="AUTHORIZATION LAYER" />
           <HeaderBox name="YOUR API" />
-          <div className="row-span-1 row-start-2 col-start-2 col-span-2">
             <Step
+              colStart={1}
+              colSpan={1}
               order={1}
               arrow="right"
+              label="Click login link"
             />
-          </div>
-          <div className="row-span-1 row-start-3 col-start-4 col-span-2">
             <Step
+              colStart={2}
+              colSpan={1}
               order={2}
               arrow="right"
+              label="Authorization Code Request to /authorize"
             />
-          </div>
-          <div className="row-span-1 row-start-4 col-start-2 col-span-4">
             <Step
+              colStart={1}
+              colSpan={2}
               order={3}
               arrow="left"
+              label="Redirect to login/authorization prompt"
             />
-          </div>
-          <div className="row-span-1 row-start-5 col-start-2 col-span-4">
             <Step
+              colStart={1}
+              colSpan={2}
               order={4}
               arrow="right"
+              label="Authenticate and Consent"
             />
-          </div>
-          <div className="row-span-1 row-start-6 col-start-4 col-span-2">
             <Step
+              colStart={2}
+              colSpan={1}
               order={5}
               arrow="left"
+              label="Authorization Code"
             />
-          </div>
-          <div className="row-span-1 row-start-7 col-start-4 col-span-2">
             <Step
+              colStart={2}
+              colSpan={1}
               order={6}
               arrow="right"
+              label="Authorization Code + Client ID + Client Secret to /oauth/token"
             />
-          </div>
-          <div className="row-span-1 row-start-8 col-start-4 col-span-2">
             <Step
+              colStart={2}
+              colSpan={1}
               order={7}
               arrow="left"
+              label="Validate Authorization Code + Client ID + Client Secret"
             />
-          </div>
-          <div className="row-span-1 row-start-9 col-start-4 col-span-2">
             <Step
+              colStart={2}
+              colSpan={1}
               order={8}
               arrow="left"
+              label="ID Token and Access Token"
             />
-          </div>
-          <div className="row-span-1 row-start-10 col-start-4 col-span-4">
             <Step
+              colStart={2}
+              colSpan={2}
               order={9}
               arrow="right"
+              label="Request user data with Access Token"
             />
-          </div>
-          <div className="row-span-1 row-start-11 col-start-4 col-span-4">
             <Step
+              colStart={2}
+              colSpan={2}
               order={10}
               arrow="left"
+              label="Response"
             />
-          </div>
         </div>
       </div>
     </div>
